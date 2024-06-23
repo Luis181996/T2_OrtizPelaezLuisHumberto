@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Trabajador</h1>
+    <div class="form-group">
+      <label for="salario">Salario Mensual:</label>
+      <input type="number" id="salario" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="anos">Años Trabajando:</label>
+      <input type="number" id="anos" class="form-control" />
+    </div>
+    <button (click)="calcularUtilidades()" class="btn btn-primary">Calcular</button>
+    <div *="utilidades !== null" class="result">
+      <h2>Utilidades: {{ utilidades}}</h2>
+    </div>
+  </div>
+  

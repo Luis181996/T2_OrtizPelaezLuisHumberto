@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Escuela</h1>
+    <div class="form-group">
+      <label for="materias">Número de Materias:</label>
+      <input type="number" id="materias"  class="form-control" />
+    </div>
+    <button (click)="calcularMatricula()" class="btn btn-primary">Calcular</button>
+    <div *="costoTotal !== null" class="result">
+      <h2>Costo Total: {{ costoTotal | currency:'S/' }}</h2>
+      <div *="descuento > 0">
+        <p>Descuento aplicado: {{ descuento | currency:'S/' }}</p>
+      </div>
+    </div>
+  </div>
+  

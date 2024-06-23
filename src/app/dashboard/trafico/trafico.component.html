@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Control de Alcoholemia</h1>
+    <div class="form-group">
+      <label for="tipoVehiculo">Tipo de Vehículo (C, A, T, M):</label>
+      <input type="text" id="tipoVehiculo"  class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="tasaAlcohol">Tasa de Alcohol:</label>
+      <input type="number" id="tasaAlcohol" class="form-control" />
+    </div>
+    <button (click)="verificarAlcoholemia()" class="btn btn-primary">Verificar</button>
+    <div *="resultado !== null" class="result">
+      <h2>Resultado: {{ resultado }}</h2>
+    </div>
+  </div>
+  
